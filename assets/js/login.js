@@ -57,6 +57,7 @@ $(function () {
       //快速获取表单数据
       data: data2,
       success: function (res) {
+        console.log(res)
         if (res.status !== 0) {
           console.log(res.message)
           return layer.msg('登录失败！')
